@@ -4,7 +4,20 @@ Scrum-it
 Scrum-it is a digital Scrum Board developed by BSgroup Technology Innovation AG in Zürich (Switzerland).
 It can be used to organize the Scrum process and manage projects, team members, sprints, userstories and tasks.
 
+Demo
+----
 Do you want to see a demo? Take a look here: http://scrum-it-demo.bsgroupti.ch/
+
+Technology
+----------
+
+Used technologies:
+
+* HTML5 / CSS3
+* JavaScript / jQuery / jQuery Mobile
+* JSON (JavaScript Object Notation)
+* Java EE with Spring
+* MySQL / Hibernate / Envers
 
 Installation
 ------------
@@ -14,8 +27,9 @@ Installation of Scrum-it is really easy.
 ### Prerequisites
 
 Before installing Scrum-it, please make sure you have these components installed:
-* MySQL 5.5.x
-* Tomcat Server 6.x or 7.x
+
+* [MySQL][2] [5.5.x][6]
+* [Tomcat Server][3] [6.x][4] or [7.x][5]
 
 ### Installation steps
 
@@ -25,8 +39,8 @@ Get the sources from http://sourceforge.net/projects/scrum-it/files/ or build yo
 Then drop the scrumit.war file into the webapp folder of your Tomcat.
 
 Next, you have to create a database with the name `scrumit` and configure the MySQL server.
-Further you have to edit the file /src/hibernate.cfg.xml. There you have to change the values for connection.url, connection.username and connection.password.
-Running Scrum-it for the first time, the database tables will be created automatically by taking the value `create` instead of `none` into the hbm2ddl property.
+Further you have to edit the file `/src/hibernate.cfg.xml`. There you have to change the values for `connection.url`, `connection.username` and `connection.password`.
+Running Scrum-it for the first time, the database tables will be created automatically by taking the value `create` instead of `none` into the `hbm2ddl` property.
 After that, the database tables are created and you can change back the value to `none`.
 
 Now, start your Tomcat Server and enjoy Scrum-it on every webbrowser (Firefox, Safari, Opera, Internet Explorer 9 and Google Chrome): http://127.0.0.1:8080/scrumit/
@@ -44,6 +58,11 @@ Contributing
 Info
 ----
 
-If you have any questions, please do not hesitate to contact us <scrum-it AT bsgroup.ch>
+If you have any questions, please do not hesitate to contact us: scrum-it AT bsgroup.ch
 
 [1]: http://github.com/ti-dev/Scrum-it/issues
+[2]: http://www.mysql.com/
+[6]: http://www.mysql.com/downloads/mysql/
+[3]: http://tomcat.apache.org/
+[4]: http://tomcat.apache.org/download-60.cgi
+[5]: http://tomcat.apache.org/download-70.cgi
