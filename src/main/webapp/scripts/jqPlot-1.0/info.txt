@@ -1,0 +1,5 @@
+http://www.jqplot.com/
+https://bitbucket.org/cleonello/jqplot/downloads/
+
+//12.04.2011
+jquery.jqplot.1.0.0a_r701.zip

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <person id="1" email="scrum-it@bsgroup.ch" firstName="Max" lastName="Mustermann"/>
+  <person id="2" email="test@test.ab.cd" firstName="Fabian" lastName="Mustermann"/>
+  <person id="3" email="john@doe.com" firstName="Max" lastName="Mustermann"/>
+  <project id="1" creationDate="2011-06-02 11:10:12.0" description="Scrum to touch" name="Scrum-it reloaded"/>
+  <project id="2" creationDate="2011-06-04 17:52:43.0" description="Stay on top" name="Agile"/>
+  <project id="3" creationDate="2011-06-07 09:15:17.0" description="Kochen mit SCRUM" name="AgileCooking"/>
+  <project_person project_id="1" person_id="1"/>
+  <project_person project_id="1" person_id="2"/>
+  <project_person project_id="1" person_id="3"/>
+  <project_person project_id="3" person_id="2"/>
+  <sprint id="1" endDate="2011-07-30 23:59:59.0" slogan="Addio, e grazie per tutto il pesce" startDate="2011-07-10 00:00:00.0" project_id="3"/>
+  <sprint id="2" endDate="2011-07-09 23:59:59.0" slogan="Kochen wie die Italiener" startDate="2011-06-16 00:00:00.0" project_id="3"/>
+  <sprint id="3" endDate="2011-08-02 23:59:59.0" slogan="Diplomarbeit - Endspurt" startDate="2011-07-15 00:00:00.0" project_id="1"/>
+  <sprint id="4" endDate="2011-07-14 23:59:59.0" slogan="Touch Touch Touch" startDate="2011-07-01 00:00:00.0" project_id="1"/>
+  <userstory id="1" acceptanceTest="Dinner has to taste even better than starter" creationDate="2011-07-07 13:45:44.0" estimatedSize="25" name="Dinner" priority="1" xCoord="0" yCoord="100"/>
+  <userstory id="2" acceptanceTest="Starter has to taste good" creationDate="2011-07-06 12:55:13.0" estimatedSize="8" name="Starter" priority="3" xCoord="0" yCoord="400"/>
+  <userstory id="3" acceptanceTest="Test hardware if it works" creationDate="2011-05-13 18:55:43.0" estimatedSize="35" name="Hardware" priority="1" xCoord="0" yCoord="300"/>
+  <userstory id="4" acceptanceTest="Test software if it works" creationDate="2011-07-01 15:00:00.0" estimatedSize="45" name="Software" priority="1" xCoord="0" yCoord="500"/>
+  <sprint_userstory sprint_id="1" userstory_id="1"/>
+  <sprint_userstory sprint_id="1" userstory_id="2"/>
+  <sprint_userstory sprint_id="3" userstory_id="3"/>
+  <sprint_userstory sprint_id="4" userstory_id="3"/>
+  <task id="1" creationDate="2011-07-07 19:00:34.0" description="Bechamel sauce" duration="1" xCoord="100" yCoord="200" status="0" userstory_id="1"/>
+  <task id="2" creationDate="2011-07-07 19:02:55.0" description="Grate cheese" duration="1" xCoord="300" yCoord="200" status="1" userstory_id="1"/>
+  <task id="3" creationDate="2011-05-13 22:01:45.0" description="cut the mirror" duration="2" xCoord="100" yCoord="300" status="0" userstory_id="3"/>
+  <task id="4" creationDate="2011-05-13 22:11:10.0" description="integrate temperature control" duration="3" xCoord="300" yCoord="300" status="1" userstory_id="3"/>
+  <task id="5" creationDate="2011-05-13 22:12:13.0" description="camera stitching" duration="3" xCoord="500" yCoord="200" status="2" userstory_id="3"/>
+  <revinfo/>
+  <task_aud/>
+  <userstory_aud/>
+</dataset>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="personServiceImpl" class="ch.bsgroup.scrumit.service.impl.PersonServiceImpl" />
+	<bean id="projectServiceImpl" class="ch.bsgroup.scrumit.service.impl.ProjectServiceImpl" />
+	<bean id="sprintServiceImpl" class="ch.bsgroup.scrumit.service.impl.SprintServiceImpl" />
+	<bean id="userStoryServiceImpl" class="ch.bsgroup.scrumit.service.impl.UserStoryServiceImpl" />
+	<bean id="taskServiceImpl" class="ch.bsgroup.scrumit.service.impl.TaskServiceImpl" />
+
+	<bean id="projectService" class="ch.bsgroup.scrumit.service.impl.ProjectServiceImpl" />
+	<bean id="personService" class="ch.bsgroup.scrumit.service.impl.PersonServiceImpl" />
+	<bean id="projectPersonController" class="ch.bsgroup.scrumit.controller.ProjectPersonController">
+		<property name="projectService">
+			<ref local="projectService"/>
+		</property>
+		<property name="personService">
+			<ref local="personService"/>
+		</property>
+	</bean>
+
+	<bean id="sprintService" class="ch.bsgroup.scrumit.service.impl.SprintServiceImpl" />
+	<bean id="userStoryService" class="ch.bsgroup.scrumit.service.impl.UserStoryServiceImpl" />
+	<bean id="burnDownChartService" class="ch.bsgroup.scrumit.service.impl.BurnDownChartServiceImpl" />
+	<bean id="taskService" class="ch.bsgroup.scrumit.service.impl.TaskServiceImpl" />
+	<bean id="sprintUserstoryController" class="ch.bsgroup.scrumit.controller.SprintUserstoryController">
+		<property name="sprintService">
+			<ref local="sprintService"/>
+		</property>
+		<property name="userStoryService">
+			<ref local="userStoryService"/>
+		</property>
+		<property name="projectService">
+			<ref local="projectService"/>
+		</property>
+		<property name="burnDownChartService">
+			<ref local="burnDownChartService"/>
+		</property>
+		<property name="taskService">
+			<ref local="taskService"/>
+		</property>
+	</bean>
+
+	<bean id="boardController" class="ch.bsgroup.scrumit.controller.BoardController">
+		<property name="sprintService">
+			<ref local="sprintService"/>
+		</property>
+		<property name="projectService">
+			<ref local="projectService"/>
+		</property>
+		<property name="userStoryService">
+			<ref local="userStoryService"/>
+		</property>
+		<property name="taskService">
+			<ref local="taskService"/>
+		</property>
+		<property name="burnDownChartService">
+			<ref local="burnDownChartService"/>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,3 @@
+https://github.com/jquery/jquery-mobile/tree/master/experiments/ui-datepicker
+jquery.ui.datepicker.mobile.css : 02. Februar 2011
+jquery.ui.datepicker.mobile.js 	: 27. Januar 2011

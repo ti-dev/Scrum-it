@@ -1,0 +1,11 @@
+http://jqueryui.com/download
+-> UI Core
+	-> Core
+	-> Widget
+	-> Mouse
+	-> Position
+-> Interactions
+	-> Draggable
+	-> Droppable
+-> Widgets
+	-> Datepicker

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <!-- Database connection settings -->
+  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="connection.url">jdbc:mysql://localhost/scrumit2</property>
+  <property name="connection.username">root</property>
+  <property name="connection.password">bsgroup</property>
+  <!-- JDBC connection pool (use the built-in) -->
+  <!--<property name="connection.pool_size">20</property>-->
+  <property name="hibernate.c3p0.acquire_increment">3</property>
+<property name="hibernate.c3p0.idle_test_period">14400</property>
+<property name="hibernate.c3p0.timeout">25200</property>
+<property name="hibernate.c3p0.max_size">15</property>
+<property name="hibernate.c3p0.min_size">3</property>
+<property name="hibernate.c3p0.max_statements">0</property>
+<property name="hibernate.c3p0.preferredTestQuery">select 1;</property>
+  <!-- SQL dialect -->
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <!-- Enable Hibernate's automatic session context management, in this case the session will be close after each transaction! -->
+  <property name="current_session_context_class">thread</property>
+  <!-- Disable the second-level cache -->
+  <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+  <!-- Echo all executed SQL to stdout -->
+  <property name="show_sql">true</property>
+  <!-- auto create tables -->
+  <property name="hbm2ddl.auto">none</property>
+  <!-- Mappings -->
+  <mapping class="ch.bsgroup.scrumit.domain.Person"/>
+  <mapping class="ch.bsgroup.scrumit.domain.Project"/>
+  <mapping class="ch.bsgroup.scrumit.domain.Sprint"/>
+  <mapping class="ch.bsgroup.scrumit.domain.UserStory"/>
+  <mapping class="ch.bsgroup.scrumit.domain.Task"/>
+  <mapping class="ch.bsgroup.scrumit.domain.BurnDown"/>
+  <!-- Envers -->
+  <event type="post-insert">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+  <event type="post-update">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+  <event type="post-delete">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+  <event type="pre-collection-update">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+  <event type="pre-collection-remove">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+  <event type="post-collection-recreate">
+   <listener class="org.hibernate.envers.event.AuditEventListener"/>
+  </event>
+ </session-factory>
+</hibernate-configuration>
