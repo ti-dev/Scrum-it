@@ -2,6 +2,7 @@ Scrum-it
 ========
 
 Scrum-it is a digital Scrum Board developed by BSgroup Technology Innovation AG in Zürich (Switzerland).
+
 It can be used to organize the Scrum process and manage projects, team members, sprints, userstories and tasks.
 
 Demo
@@ -55,8 +56,14 @@ Contributing
 5. Create an [Issue][1] with a link to your branch
 6. Enjoy a refreshing Diet Coke and wait
 
-Info
-----
+More information about the project
+----------------------------------
+
+Feel free to make changes and contribute to the project.
+
+We have a video tutorial (german language): http://www.youtube.com/watch?v=zfcZF1EeY7Q
+
+We also have a nice little movie about Scrum-it: http://www.youtube.com/watch?v=Hp9wMQkmYDw
 
 If you have any questions, please do not hesitate to contact us: scrum-it AT bsgroup.ch
 
