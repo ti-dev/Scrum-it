@@ -5,10 +5,6 @@ Scrum-it is a digital Scrum Board developed by ti&m AG in Zurich (Switzerland).
 
 It can be used to organize the Scrum process and manage projects, team members, sprints, userstories and tasks.
 
-Demo
-----
-Do you want to see a demo? Take a look here: http://scrum-it-demo.bsgroupti.ch/
-
 Technology
 ----------
 
