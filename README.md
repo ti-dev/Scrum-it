@@ -66,3 +66,8 @@ We also have a nice little movie about Scrum-it: http://www.youtube.com/watch?v=
 [3]: http://tomcat.apache.org/
 [4]: http://tomcat.apache.org/download-60.cgi
 [5]: http://tomcat.apache.org/download-70.cgi
+
+Support
+-------
+
+Unfortunately, I do not have the time to support this project anymore.
