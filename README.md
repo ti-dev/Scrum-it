@@ -60,9 +60,6 @@ Feel free to make changes and contribute to the project.
 We have a video tutorial (german language): http://www.youtube.com/watch?v=zfcZF1EeY7Q
 
 We also have a nice little movie about Scrum-it: http://www.youtube.com/watch?v=Hp9wMQkmYDw
-
-If you have any questions, please do not hesitate to contact us: scrum-it AT ti8m.ch
-
 [1]: http://github.com/ti-dev/Scrum-it/issues
 [2]: http://www.mysql.com/
 [6]: http://www.mysql.com/downloads/mysql/
